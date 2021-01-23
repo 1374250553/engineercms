@@ -685,8 +685,9 @@ func (c *OnlyController) OnlyOffice() {
 	c.Data["role"] = role
 	c.Data["IsAdmin"] = isadmin
 	c.Data["IsLogin"] = islogin
-	c.Data["Uid"] = uid
+	// c.Data["Uid"] = uid
 	useridstring = strconv.FormatInt(uid, 10)
+	c.Data["Uid"] = useridstring
 	//增加admin，everyone，isme
 
 	var usersessionid string //客户端sesssionid
